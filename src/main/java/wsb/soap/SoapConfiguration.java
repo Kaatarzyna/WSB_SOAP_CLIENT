@@ -20,7 +20,6 @@ public class SoapConfiguration {
     @Bean
     public SoapClient countryClient(Jaxb2Marshaller marshaller) {
         SoapClient client = new SoapClient();
-        client.setDefaultUri(SoapClient.SERVICE_URL);
 
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
